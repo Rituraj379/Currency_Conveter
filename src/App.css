@@ -1,0 +1,75 @@
+/* Container for the buffering animation */
+#buffering {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+/* Money symbols arranged in a circle */
+.money-symbol {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  color: #76c043; /* Money green */
+  animation: buffering 1.5s linear infinite;
+}
+
+/* Positioning the money symbols in a circular pattern */
+.money-symbol:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  animation-delay: 0s;
+}
+
+.money-symbol:nth-child(2) {
+  top: 25%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  animation-delay: 0.1s;
+}
+
+.money-symbol:nth-child(3) {
+  top: 75%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  animation-delay: 0.2s;
+}
+
+.money-symbol:nth-child(4) {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  animation-delay: 0.3s;
+}
+
+.money-symbol:nth-child(5) {
+  top: 75%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  animation-delay: 0.4s;
+}
+
+.money-symbol:nth-child(6) {
+  top: 25%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  animation-delay: 0.5s;
+}
+
+/* Keyframe for buffering animation */
+@keyframes buffering {
+  0% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+}
