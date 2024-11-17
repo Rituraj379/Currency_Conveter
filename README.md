@@ -1,2 +1,2 @@
 # Currency_Conveter
-Find out the value of any Currency
+A Currency Converter website built with HTML, CSS, JavaScript, React, and Tailwind CSS allows users to easily convert between different currencies. The front-end uses React to handle user input and display results dynamically. Tailwind CSS provides a utility-first framework to quickly design a responsive and modern interface. By integrating an API,the app fetches real-time exchange rates to perform accurate conversions. This project offers an interactive and user-friendly experience with clean, responsive design.
